@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu casa propia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="encabezado__texto">
+            <h1 class="encabezado__texto__titulo">Tu casa propia cada vez más cerca</h1>
+            <h2 class="encabezado__texto__parrafo">Las mejores propiedades de Capital Federal</h2>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <form class="buscador">
+                <div class="buscador__tipo">
+                    <label>Tipo de transacción:</label>
+                    <select>
+                        <option value="">Seleccione...</option>
+                        <option value="Alquiler">Alquiler</option>
+                        <option value="Venta">Venta</option>
+                    </select>
+                </div>
+                <div class="buscador__tipo">
+                    <label>Tipo de propiedad:</label>
+                    <select>
+                        <option value="">Seleccione...</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Departamento">Departamento</option>
+                    </select>
+                </div>
+                <div class="buscador__tipo">
+                    <label for="Ambientes">Ambientes:</label>
+                    <input type="number" id="ambientes" placeholder="Ingrese la cantidad de ambientes">
+                </div>
+                <div class="buscador__tipo">
+                    <label for="precio-minimo">Precio mínimo (en dólares):</label>
+                    <input type="number" id="price" placeholder="Ingrese el precio mínimo">
+                </div>
+                <div class="buscador__tipo">
+                    <label for="precio-maximo">Precio máximo (en dólares):</label>
+                    <input type="number" id="price" placeholder="Ingrese el precio máximo">
+                </div>
+                <div class="buscador__tipo">
+                    <label for="barrio">Elije el barrio:</label>
+                    <select>
+                      <option value="">Seleccione...</option>
+                      <option value="belgrano">Belgrano</option>
+                      <option value="caballito">Caballito</option>
+                      <option value="palermo">Palermo</option>
+                      <option value="recoleta">Recoleta</option>
+                      <option value="villaUrquiza">Villa Urquiza</option>
+                    </select>
+                </div>
+            </form>
+            <button class="buscador__btn" type="submit">Buscar</button>      
+        </div>
+    </main>
+
+    <!-- <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script> -->
+</body>
+</html>
