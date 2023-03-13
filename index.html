@@ -20,11 +20,11 @@
     </header>
 
     <main>
-        <div>
+        <div class="contenedor">
             <form class="buscador">
                 <div class="buscador__tipo">
                     <label>Tipo de transacción:</label>
-                    <select>
+                    <select name="tipoTransaccion">
                         <option value="">Seleccione...</option>
                         <option value="Alquiler">Alquiler</option>
                         <option value="Venta">Venta</option>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="buscador__tipo">
                     <label>Tipo de propiedad:</label>
-                    <select>
+                    <select name="tipoPropiedad">
                         <option value="">Seleccione...</option>
                         <option value="Casa">Casa</option>
                         <option value="Departamento">Departamento</option>
@@ -40,19 +40,19 @@
                 </div>
                 <div class="buscador__tipo">
                     <label for="Ambientes">Ambientes:</label>
-                    <input type="number" id="ambientes" placeholder="Ingrese la cantidad de ambientes">
+                    <input type="number" name="ambientes" id="ambientes" placeholder="Ingrese la cantidad de ambientes">
                 </div>
                 <div class="buscador__tipo">
                     <label for="precio-minimo">Precio mínimo (en dólares):</label>
-                    <input type="number" id="price" placeholder="Ingrese el precio mínimo">
+                    <input type="number" name="precioMinimo" id="priceMin" placeholder="Ingrese el precio mínimo">
                 </div>
                 <div class="buscador__tipo">
                     <label for="precio-maximo">Precio máximo (en dólares):</label>
-                    <input type="number" id="price" placeholder="Ingrese el precio máximo">
+                    <input type="number" name="precioMaximo" id="priceMax" placeholder="Ingrese el precio máximo">
                 </div>
                 <div class="buscador__tipo">
                     <label for="barrio">Elije el barrio:</label>
-                    <select>
+                    <select name="barrio">
                       <option value="">Seleccione...</option>
                       <option value="belgrano">Belgrano</option>
                       <option value="caballito">Caballito</option>
@@ -61,9 +61,12 @@
                       <option value="villaUrquiza">Villa Urquiza</option>
                     </select>
                 </div>
+                <button class="buscador__btn" type="submit">Buscar</button>      
             </form>
-            <button class="buscador__btn" type="submit">Buscar</button>      
         </div>
+
+        <div id="propiedades"></div>
+
     </main>
 
     <script src="./js/data.js"></script>
