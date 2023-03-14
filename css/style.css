@@ -23,11 +23,10 @@ body{
 .encabezado__texto{
     color: #fff;
     margin: 20px;
-    text-align: center;
 }
 
 .encabezado__texto__titulo{
-    font-size: 50px;
+    font-size: 30px;
     font-style: italic;
     background-color: #887269a2;
     padding: 5px 20px;
@@ -36,6 +35,7 @@ body{
 }
 
 .encabezado__texto__parrafo{
+    font-size: 15px;
     font-weight: normal;
     background-color: #887269a2;
     padding: 5px 20px;
@@ -134,11 +134,23 @@ img{
     height: 200px;
 }
 
-/* .card{
-    background-color:#49728C;
-    max-width: 18em;
-    margin-top: 18em;
-    padding: 1em;
-    border-radius: 5px;
-    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+.propiedad-name{
+    margin-bottom: 7px;
+}
+
+.container h5{
+    margin-bottom: 7px;
+}
+
+.container p{
+    margin-bottom: 7px;
+}
+
+@media (min-width: 950px){
+    .encabezado__texto__titulo{
+        font-size: 50px;
+    }
+    .encabezado__texto__parrafo{
+        font-size: 25px;
+    }
 }
